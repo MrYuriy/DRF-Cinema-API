@@ -8,13 +8,13 @@ To install the Cinema API, you need to follow the below steps:
 
 1. Install PostgresSQL and create a database
 2. Clone the repository using `git clone https://github.com/MrYuriy/DRF-Cinema-API.git`
-3. Navigate to the repository directory using `cd drf-cinema-api`
+3. Navigate to the repository directory using `cd DRF-Cinema-API`
 4. Create a virtual environment using `python -m venv venv`
 5. Activate the virtual environment on Linux/macOS using `source venv/bin/activate` or on Windows using `venv\Scripts\activate`
 6. Install the required dependencies using `pip install -r requirements.txt`
 7. Set environment variables like in .env_sample. Create .env file in your project's directory: 
    ```SQL
-   touch .env
+   echo. >.env
    ```
 8. Apply migrations to the database using `python manage.py migrate`
 9. Start the server using `python manage.py runserver`
@@ -25,8 +25,9 @@ To run the Cinema API with Docker, you need to follow the below steps:
 
 1. Ensure that Docker is installed on your system
 2. Clone the repository using `git clone https://github.com/MrYuriy/DRF-Cinema-API.git`
-3. Add the .env file to the root of the project. In this file you must specify the values of the environment variables. Use the example which is in the .env.sample file.
-4. Navigate to the repository directory using `cd drf-cinema-api`
+3. Add the .env file to the root of the project. In this file you must specify the values of the environment variables.
+   Use the example which is in the .env.sample file.
+4. Navigate to the repository directory using `cd DRF-Cinema-API`
 5. Build the Docker image using `docker-compose build`
 6. Start the Docker container using `docker-compose up`
 
